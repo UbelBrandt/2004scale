@@ -1,0 +1,52 @@
+/*****************************************************************/
+/*                                                               */
+/* This custom CSS can be used with various user style plugins   */
+/* in order to scale the 2004scape web client automatically and  */
+/* preserve pixel-perfect integer scaling.                       */
+/*                                                               */
+/* This also removes the banner in order to better fit the       */
+/* client within the browser's viewport.                         */
+/*                                                               */
+/*****************************************************************/
+
+
+/*****************************************************************/
+/*                                                               */
+/*                           ! ! ! ! !                           */
+/*                                                               */
+/* REMEMBER TO CLICK "Auto scaling" to change to "Pixel scaling" */
+/*                IF YOU DO NOT IT WILL BE BLURRY!               */
+/*                                                               */
+/*                           ! ! ! ! !                           */
+/*                                                               */
+/*****************************************************************/
+
+/* makes the scaling work correctly */
+body
+{
+	image-rendering: crisp-edges;
+	transform-origin: center top;
+	transform: scale(1);
+}
+
+/* hides the banner */
+table table:first-child { display: none; }
+
+/* removes extra space */
+td { padding: 0px; } 
+
+/* sets the scale value according to browser viewport size */
+@media (width >= 1578px) and (height >= 1064px)
+{
+	body { transform: scale(2); }
+}
+
+@media (width >= 2367px) and (height >= 1596px)
+{
+	body { transform: scale(3); }
+}
+
+@media (width >= 3156px) and (height >= 2128px)
+{
+	body { transform: scale(4); }
+}
