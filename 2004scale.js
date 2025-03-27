@@ -7,12 +7,11 @@
 // @include      *lostcity.rs*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=2004scape.org
 // @grant        GM_addStyle
+// @downloadURL  https://raw.githubusercontent.com/UbelBrandt/2004scale/refs/heads/main/2004scale.js
 // ==/UserScript==
 
 (function() {
     'use strict';
-    //let canvas = document.getElementById('canvas');
-    //let filtering = canvas.style.imageRendering == 'pixelated';
 
     // hide controls
     document.getElementById('controls').style.display = 'none';
